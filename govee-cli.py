@@ -437,8 +437,8 @@ def groups_remove(args: argparse.Namespace) -> None:
 
 
 def add_common_target_args(p: argparse.ArgumentParser) -> None:
-    p.add_argument("--name", help="Nickname from ~/.config/govee_devices.json")
-    p.add_argument("--group", help="Group name from ~/.config/govee_devices.json")
+    p.add_argument("-n", "--name", help="Nickname from ~/.config/govee_devices.json")
+    p.add_argument("-g","--group", help="Group name from ~/.config/govee_devices.json")
     p.add_argument("-d", "--device", help="Govee device ID (from `list`)")
     p.add_argument("-m", "--model", help="Govee model (e.g., H6008)")
 
