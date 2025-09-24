@@ -1,14 +1,13 @@
 # Govee CLI
 
-A small, no-frills command-line tool to control **Govee** lights via the official **Cloud API**.
-Supports **nicknames** (device aliases) and **groups**, plus one-time migration from an older single-file config.
+A small command-line tool to control **Govee** lights via their official **Cloud API**.
+Supports **nicknames** (device aliases) and **groups**
 
 ## Features
 - Turn on/off, set brightness, color (RGB/HEX), and color temperature
 - Nicknames for devices (e.g., `--name lamp`)
 - Groups to control multiple devices at once (e.g., `--group livingroom`)
 - Simple JSON configs under `~/.config/govee/`
-- Optional migration from `~/.config/govee_devices.json` to the new two-file layout
 
 ## Quick Start
 
