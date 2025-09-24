@@ -100,7 +100,7 @@ Groups let you control multiple devices at once.
 }
 ```
 
-Members can be nicknames (strongs from devices.json) or inline (id, model).
+Members can be nicknames (strings from devices.json) or inline (id, model).
 
 
 You can manage these files manually, or use the built-in commands:
