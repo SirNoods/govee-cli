@@ -39,36 +39,36 @@ Once your API key and configuration are set up, you can control your devices fro
 ### List devices
 Shows all devices on your account, including any nicknames you’ve configured.
 ```bash
-govee list
+python3 govee_cli.py list
 ```
 
 ### Power
 Turn a device or group on/off.
 ```
 # By nickname
-govee power on --name lamp
-govee power off -n desk
+python3 govee_cli.py power on --name lamp
+python3 govee_cli.py power off -n desk
 
 # By group
-govee power off --group livingroom
-govee power on -g stream
+python3 govee_cli.py power off --group livingroom
+python3 govee_cli.py power on -g stream
 ```
 
 ### Brightness
 Set brightness from 0-100.
 ```
-govee brightness 75 -n lamp
-govee brightness 40 -g livingroom
+python3 govee_cli.py brightness 75 -n lamp
+python3 govee_cli.py brightness 40 -g livingroom
 ```
 
 ### Color
 Set color either by hex code or RGB values.
 ```
 # Hex color
-govee color --hex "#ffaa00" -n lamp
+python3 govee_cli.py color --hex "#ffaa00" -n lamp
 
 # RGB values
-govee color --rgb 0 128 255 -g stream
+python3 govee_cli.py color --rgb 0 128 255 -g stream
 ```
 
 ## Configuration
@@ -106,15 +106,15 @@ Members can be nicknames (strings from devices.json) or inline (id, model).
 You can manage these files manually, or use the built-in commands:
 ```
 # Devices
-govee names list
-govee names add lamp -d <DEVICE_ID> -m H6008
-govee names remove lamp
+python3 govee_cli.py names list
+python3 govee_cli.py names add lamp -d <DEVICE_ID> -m H6008
+python3 govee_cli.py names remove lamp
 
 # Groups
-govee groups add livingroom
-govee groups add-members livingroom --names lamp desk
-govee groups list
-govee groups show livingroom
+python3 govee_cli.py groups add livingroom
+python3 govee_cli.py groups add-members livingroom --names lamp desk
+python3 govee_cli.py groups list
+python3 govee_cli.py groups show livingroom
 
 
 ```
